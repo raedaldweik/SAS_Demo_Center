@@ -1,28 +1,15 @@
+/** One row of demos.xlsx. */
 export interface Demo {
   id: string;
   title: string;
   description: string;
-  categories: DemoCategory[];
-  imageUrl: string;
+  /** Drive the navigation filters. The first tag is shown as the badge on the card. */
   tags: string[];
-  featured?: boolean;
-  author: string;
-  views: number;
+  /** Shown as #hashtags on the card and used by the search box. */
+  keywords: string[];
+  /** Empty when the sheet has no (valid) link yet. */
   url: string;
-}
-
-export enum DemoCategory {
-  ALL = 'All',
-  VISUAL_ANALYTICS = 'Visual Analytics',
-  VISUAL_INVESTIGATOR = 'Visual Investigator',
-  INTELLIGENT_DECISIONING = 'Intelligent Decisioning',
-  MODEL_STUDIO = 'Model Studio',
-  OCR = 'OCR',
-  OPTIMIZATION = 'Optimization',
-  GENERATIVE_AI = 'Generative AI'
-}
-
-export interface NavItem {
-  label: string;
-  href: string;
+  /** Empty when the sheet has no (valid) image link: the default picture is used. */
+  imageUrl: string;
+  featured: boolean;
 }

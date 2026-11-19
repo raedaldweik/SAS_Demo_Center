@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Demo">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e2d52"/>
+      <stop offset="0.55" stop-color="#004C90"/>
+      <stop offset="1" stop-color="#0070C0"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#22d3ee" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="area" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="dots" width="32" height="32" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.4" fill="#ffffff" fill-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bg)"/>
+  <rect width="800" height="480" fill="url(#dots)"/>
+  <rect width="800" height="480" fill="url(#glow)"/>
+
+  <!-- bars -->
+  <g fill="#ffffff" fill-opacity="0.13">
+    <rect x="96" y="300" width="44" height="120" rx="6"/>
+    <rect x="164" y="250" width="44" height="170" rx="6"/>
+    <rect x="232" y="280" width="44" height="140" rx="6"/>
+    <rect x="300" y="210" width="44" height="210" rx="6"/>
+    <rect x="368" y="240" width="44" height="180" rx="6"/>
+    <rect x="436" y="170" width="44" height="250" rx="6"/>
+    <rect x="504" y="200" width="44" height="220" rx="6"/>
+    <rect x="572" y="130" width="44" height="290" rx="6"/>
+    <rect x="640" y="160" width="44" height="260" rx="6"/>
+  </g>
+
+  <!-- trend line -->
+  <path d="M118 290 L186 236 L254 262 L322 192 L390 220 L458 150 L526 178 L594 108 L662 136 L662 420 L118 420 Z" fill="url(#area)"/>
+  <path d="M118 290 L186 236 L254 262 L322 192 L390 220 L458 150 L526 178 L594 108 L662 136" fill="none" stroke="#ffffff" stroke-opacity="0.85" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ffffff">
+    <circle cx="118" cy="290" r="6"/>
+    <circle cx="186" cy="236" r="6"/>
+    <circle cx="254" cy="262" r="6"/>
+    <circle cx="322" cy="192" r="6"/>
+    <circle cx="390" cy="220" r="6"/>
+    <circle cx="458" cy="150" r="6"/>
+    <circle cx="526" cy="178" r="6"/>
+    <circle cx="662" cy="136" r="6"/>
+  </g>
+  <circle cx="594" cy="108" r="16" fill="#22d3ee" fill-opacity="0.3"/>
+  <circle cx="594" cy="108" r="8" fill="#67e8f9"/>
+
+  <!-- baseline -->
+  <rect x="80" y="420" width="640" height="2" fill="#ffffff" fill-opacity="0.3"/>
+</svg>

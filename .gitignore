@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Excel lock files (created while demos.xlsx is open in Excel)
+~$*
